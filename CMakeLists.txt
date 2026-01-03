@@ -47,7 +47,7 @@ set(CMAKE_C_FLAGS_RELEASE "-O3")
 
 # Declare library target
 add_library(periphery ${periphery_SOURCES} ${periphery_HEADERS})
-set_target_properties(periphery PROPERTIES VERSION ${VERSION} SOVERSION ${SOVERSION})
+# set_target_properties(periphery PROPERTIES VERSION ${VERSION} SOVERSION ${SOVERSION})
 target_include_directories(periphery PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
     $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
